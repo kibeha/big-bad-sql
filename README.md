@@ -1,6 +1,6 @@
 # Who's afraid of the Big Bad SQL?
 
-This repository accompanies the presentation "Who's afraid of the Big Bad SQL?" by Kim Berg Hansen.
+This repository accompanies the presentation "Who's afraid of the Big Bad SQL?" ( https://bit.ly/bigbadsql_pptx ) by Kim Berg Hansen.
 
 This is purely for demonstration. Use it at your own risk and be sure to understand it before using.
 
