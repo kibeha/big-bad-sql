@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>     
+  <session-factory>
+    <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="connection.url">jdbc:oracle:thin:@192.168.56.103:1521/orcl</property>
+    <property name="connection.username">practical</property>
+    <property name="connection.password">practical</property>
+    <property name="dialect">org.hibernate.dialect.Oracle12cDialect</property>
+     
+    <property name="show_sql">true</property>
+         
+    <mapping class="kibeha.practical.Brewery" />
+    <mapping class="kibeha.practical.Customer" />
+    <mapping class="kibeha.practical.Inventory" />
+    <mapping class="kibeha.practical.Location" />
+    <mapping class="kibeha.practical.Order" />
+    <mapping class="kibeha.practical.OrderLine" />
+    <mapping class="kibeha.practical.Product" />
+    <mapping class="kibeha.practical.ProductGroup" />
+    <mapping class="kibeha.practical.Purchase" />
+
+  </session-factory>
+</hibernate-configuration>
