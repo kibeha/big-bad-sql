@@ -15,19 +15,21 @@ public class ExecPickList {
 		try
 		{
 			conn = DataSourceUtil.getConnection();
+/*
 			DataSourceUtil.beginTrace(conn, "V3");
 	        int startMilli = LocalTime.now().get(ChronoField.MILLI_OF_DAY);
-
+*/
 	        PickList pickList = new PickList();
 	        
 	        pickList.fetchByFifo(conn, 421L);
 	        
 	        pickList.output();
-	        
+/*
 	        int endMilli = LocalTime.now().get(ChronoField.MILLI_OF_DAY);
 	        System.out.printf("Millisecs: %d", endMilli - startMilli);
 	        DataSourceUtil.endTrace(conn);
 	        System.out.println();
+*/
 		}
 		finally
 		{
